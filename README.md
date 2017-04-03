@@ -21,4 +21,4 @@ java -jar .\target\distributedcounterclient-0.0.1-SNAPSHOT.jar 127.0.0.1 8080 de
 
 java -jar .\target\distributedcounterclient-0.0.1-SNAPSHOT.jar 127.0.0.1 8080 getcount
 
-*Test Coverage: 92.8%*
+**Test Coverage: 92.8%**
