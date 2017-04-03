@@ -18,7 +18,7 @@ public class DistributedCounterClientApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(DistributedCounterClientApplication.class, args);
 
-		if(args.length > 3) {
+		if(args.length >= 3) {
 			String ip = args[0];
 			String port = args[1];
 			String action = args[2];

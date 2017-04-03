@@ -5,10 +5,10 @@
 
 	<groupId>com.distributedcounterclient</groupId>
 	<artifactId>distributedcounterclient</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>DistributedCounterClient</name>
+	<name>distributedcounterclient</name>
 	<description>distributedcounterclient</description>
 
 	<parent>
@@ -52,4 +52,5 @@
 	</build>
 
 
+	<url>https://github.com/bilaldurrani/DistributedCounterClient</url>
 </project>
