@@ -8,7 +8,9 @@ Simple client to connect to Distributed Counter
 `java -jar .\target\distributedcounterclient-0.0.1-SNAPSHOT.jar IP PORT COMMAND`
 
 IP: in format int.int.int.int
+
 PORT: an Integer
+
 COMMAND:
 1. increment
 2. decrement
