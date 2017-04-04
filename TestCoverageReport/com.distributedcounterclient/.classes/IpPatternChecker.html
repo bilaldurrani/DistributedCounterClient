@@ -1,0 +1,104 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: IpPatternChecker</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.distributedcounterclient</a> ]
+</div>
+
+<h1>Coverage Summary for Class: IpPatternChecker (com.distributedcounterclient)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">IpPatternChecker</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/ 7)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.distributedcounterclient;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.util.regex.Pattern;
+<i>4</i>&nbsp;
+<b class="fc"><i>5</i>&nbsp;public class IpPatternChecker {</b>
+<i>6</i>&nbsp;
+<b class="fc"><i>7</i>&nbsp;	Pattern ipPattern = Pattern.compile(&quot;\\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b&quot;);</b>
+<i>8</i>&nbsp;	
+<i>9</i>&nbsp;	public boolean checkIp(String toCheck, String port) {
+<b class="fc"><i>10</i>&nbsp;		return checkIsInt(port) &amp;&amp; ipPattern.matcher(toCheck).matches();</b>
+<i>11</i>&nbsp;	}
+<i>12</i>&nbsp;	
+<i>13</i>&nbsp;	private boolean checkIsInt(String toCheck) {
+<i>14</i>&nbsp;		try{
+<b class="fc"><i>15</i>&nbsp;				Integer.parseInt(toCheck);</b>
+<b class="fc"><i>16</i>&nbsp;				return true;</b>
+<b class="fc"><i>17</i>&nbsp;		} catch (NumberFormatException e) {</b>
+<b class="fc"><i>18</i>&nbsp;				return false;</b>
+<i>19</i>&nbsp;		}
+<i>20</i>&nbsp;	}
+<i>21</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2017-04-04 14:17</div>
+</div>
+</body>
+</html>
