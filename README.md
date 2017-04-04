@@ -17,10 +17,10 @@ COMMAND:
 3. getcount
 
 #Example
-java -jar .\target\distributedcounterclient-0.0.1-SNAPSHOT.jar 127.0.0.1 8080 increment
+java -jar .\target\distributedcounterclient-1.0.0.jar 127.0.0.1 8080 increment
 
-java -jar .\target\distributedcounterclient-0.0.1-SNAPSHOT.jar 127.0.0.1 8080 decrement
+java -jar .\target\distributedcounterclient-1.0.0.jar 127.0.0.1 8080 decrement
 
-java -jar .\target\distributedcounterclient-0.0.1-SNAPSHOT.jar 127.0.0.1 8080 getcount
+java -jar .\target\distributedcounterclient-1.0.0.jar 127.0.0.1 8080 getcount
 
 **Test Coverage: 92.8% - See folder /TestCoverageReport**
